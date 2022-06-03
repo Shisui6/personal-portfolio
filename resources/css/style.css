@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    /* border: 0.1px solid black;  */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 100px;
+    transition: 0.4s;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    transition: 0.4s;
+}
+
+ul {
+    margin-right: 70px;
+}
+
+
+nav li {
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 0 5px;
+    color: #fff;
+    transition: 0.4s;
+}
+
+#sec1 {
+    background-image: url('../images/wolf.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 647px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sec1::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 647px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.intro {
+    position: relative;
+    top: 140px;
+    color: #fff;
+    text-align: center;
+}
+
+.intro h1 {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.intro h2 {
+    font-size: 40px;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+#soft {
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+#type {
+    text-decoration: underline;
+}
+
+#cursor {
+	display: inline-block;
+	vertical-align: middle;
+	width: 2px;
+	height: 35px;
+	background-color: #fff;
+	animation: blink .75s step-end infinite;
+}
+
+@keyframes blink {
+	from, to { 
+		background-color: transparent 
+	}
+	50% { 
+		background-color: #fff; 
+	}
+}
+
+.fa-arrow-down {
+    color: #fff;
+    margin-top: 40px;
+}
+
+#sec2 {
+    height: 647px;
+}
