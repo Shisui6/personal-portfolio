@@ -57,16 +57,13 @@ function scrollFunction() {
     document.getElementById("head").style.height = "60px";
     document.getElementById("head").style.boxShadow = "0 4px 8px 0 rgba(80,113,105,0.2)";
     document.getElementById("nav").style.marginTop = "10px";
-    var elem = document.getElementsByTagName("li");
-    for (let i = 0; i < elem.length; i++) {
-        elem[i].style.color="#000";
-    }
+     
   } else {
     document.getElementById("head").style.backgroundColor = "rgba(0, 0, 0, 0)";
     document.getElementById("head").style.height = "80px";
     document.getElementById("head").style.boxShadow = '';
     document.getElementById("nav").style.marginTop = "35px";
-    var elem = document.getElementsByTagName("li");
+    var elem = document.getElementsByClassName("whi");
     for (let i = 0; i < elem.length; i++) {
         elem[i].style.color="#fff";
     }
