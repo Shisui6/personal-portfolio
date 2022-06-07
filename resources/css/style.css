@@ -89,6 +89,11 @@ nav li a:active {
     line-height: 48px;
     margin-top: 10px;
     margin-bottom: 0px;
+    opacity: 0;
+    position: relative;
+    bottom:-50px;
+    animation: animate-bottom 1.5s forwards;
+    animation-delay: 1.7s;
 }
 
 .intro h2 {
@@ -97,11 +102,37 @@ nav li a:active {
     margin-bottom: 0px;
 }
 
+.hello {
+    opacity: 0;
+    position: relative;
+    top:-70px;
+    animation: animate-top 1.5s forwards;
+    animation-delay: .2s;
+}
+
 #soft {
     font-size: 30px;
     margin-top: 20px;
     font-weight: 400;
+    opacity: 0;
+    position: relative;
+    bottom:-50px;
+    animation: animate-bottom 1.5s forwards;
+    animation-delay: 3.2s;
 }
+
+.intro a {
+    opacity: 0;
+    position: relative;
+    bottom:-50px;
+    animation: animate-bottom 1.5s forwards;
+    animation-delay: 4.2s;
+}
+
+@keyframes animate-top {
+    100% { top:0; opacity:1 }
+}
+
 
 #type {
     text-decoration: underline;
@@ -150,6 +181,19 @@ nav li a:active {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
+#prof {
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    100% { opacity:1 }
+}
+
+#prof.animate {
+    animation: fade-in 2s forwards;
+    animation-delay: .2s;
+}
+
 .ab {
     margin-bottom: 15px;
     font-size: 10px;
@@ -176,6 +220,77 @@ nav li a:active {
     font-size: 15px;
     line-height: 1.8;
     color: rgba(0, 0, 0, 0.6);
+}
+
+#ab-cont {
+    position: relative;
+    opacity: 0;
+    left:-70px;
+}
+
+@keyframes animate-left {
+    100% { left:0; opacity:1 }
+}
+
+#ab-cont.animate {
+    animation: animate-left 1.5s forwards;
+    animation-delay: 1.2s;
+}
+
+#skill1 {
+    position: relative;
+    opacity: 0;
+    left:-40px;
+}
+
+@keyframes animate-left1 {
+    100% { left:0; opacity:1 }
+}
+
+#skill1.animate {
+    animation: animate-left1 1s forwards;
+    animation-delay: 2s;
+}
+
+#skill2 {
+    position: relative;
+    opacity: 0;
+    right:-40px;
+}
+
+@keyframes animate-right {
+    100% { right:0; opacity:1 }
+}
+
+#skill2.animate {
+    animation: animate-right 1s forwards;
+    animation-delay: 2.3s;
+}
+
+#skill3 {
+    position: relative;
+    opacity: 0;
+    bottom:-40px;
+}
+
+@keyframes animate-bottom {
+    100% { bottom:0; opacity:1 }
+}
+
+#skill3.animate {
+    animation: animate-bottom 1s forwards;
+    animation-delay: 2.7s;
+}
+
+#skill4 {
+    position: relative;
+    opacity: 0;
+    bottom:-40px;
+}
+
+#skill4.animate {
+    animation: animate-bottom 1s forwards;
+    animation-delay: 2.9s;
 }
 
 .skills {
@@ -228,10 +343,30 @@ hr {
     margin-bottom: 1.5em;
 }
 
+#fea {
+    position: relative;
+    opacity: 0;
+    bottom:-60px;
+}
+
+#fea.animate {
+    animation: animate-bottom 1.3s forwards;
+    animation-delay: .2s;
+}
+
 #sec3 ul {
     text-align: center;
     width: 97.5%;
     margin-bottom: 4em;
+}
+
+#fil {
+    opacity: 0;
+}
+
+#fil.animate {
+    animation: fade-in 2s forwards;
+    animation-delay: 1s;
 }
 
 #sec3 li{
@@ -251,29 +386,42 @@ hr {
     border-radius: 25px;
 }
 
+#cre {
+    background-image: url('../images/card.jpg');
+    animation-delay: 1.6s;
+    
+}
+
+
+#mess {
+    background-image: url('../images/message.jpg');
+    animation-delay: 2.6s;
+}
+
+
+#num {
+    background-image: url('../images/number.jpg');
+    animation-delay: 3.6s;
+}
+
 .pro {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;    
     border-radius: 25px;
     cursor: pointer;
+    position: relative;
+    opacity: 0;
+    bottom:-50px;
 }
 
-#cre {
-    background-image: url('../images/card.jpg');
-}
-
-#mess {
-    background-image: url('../images/message.jpg');
-}
-
-#num {
-    background-image: url('../images/number.jpg');
+.pro.animate {
+    animation: animate-bottom 1.2s forwards;
 }
 
 .overlay {
     position: absolute;
-    width: 30.1%;
+    width: 100%;
     height: 300px;
     border-radius: 25px;
     opacity: 0;
@@ -318,6 +466,17 @@ hr {
     margin-bottom: 1.5em;
 }
 
+#get {
+    position: relative;
+    opacity: 0;
+    bottom:-60px;
+}
+
+#get.animate {
+    animation: animate-bottom 1.3s forwards;
+    animation-delay: .2s;
+}
+
 .contact {
     width: 90%;
     margin: 0 auto;
@@ -326,6 +485,17 @@ hr {
     grid-template-rows: 550px;
     grid-gap: 6%;
     padding: 20px 10px;
+}
+
+#cont {
+    position: relative;
+    opacity: 0;
+    left:-70px;
+}
+
+#cont.animate {
+    animation: animate-left 1.5s forwards;
+    animation-delay: .5s;
 }
 
 .contact h3 {
@@ -347,6 +517,32 @@ hr {
     font-size: 16px;
     margin-bottom: 30px;
     line-height: 27.2px;
+}
+
+.detail {
+    position: relative;
+    opacity: 0;
+    right:-40px;
+}
+
+.detail.animate {
+    animation: animate-right 1s forwards;
+}
+
+#det {
+    animation-delay: .5s;
+}
+
+#det1 {
+    animation-delay: .8s;
+}
+
+#det2 {
+    animation-delay: 1s;
+}
+
+#det3 {
+    animation-delay: 1.3s;
 }
 
 input[type=text], [type=textarea] {
