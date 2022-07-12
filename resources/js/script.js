@@ -62,9 +62,31 @@ function scrollFunction() {
         elem[i].style.color="#000";
     }
 
-    document.getElementById('abo').onmouseover = function(e) {
-        e.style.color = '#008cba';
+    function hover(e) {
+        if (e.target.style.color !== '#008cba') {
+            e.target.style.color = '#008cba';
+        }
     }
+
+    function hoverout(e) {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            e.target.style.color = '#000';
+        }
+        else {
+            e.target.style.color = '#fff';
+        }
+    }
+
+    document.getElementById('ho').onmouseover = hover;
+    document.getElementById('ho').onmouseout = hoverout;
+    document.getElementById('abo').onmouseover = hover;
+    document.getElementById('abo').onmouseout = hoverout;
+    document.getElementById('project').onmouseover = hover;
+    document.getElementById('project').onmouseout = hoverout;
+    document.getElementById('contact').onmouseover = hover;
+    document.getElementById('contact').onmouseout = hoverout;
+
+
 
     let top  = window.pageYOffset + window.innerHeight;
     let isVisible = top > document.querySelector('.skills').offsetTop;
@@ -73,18 +95,28 @@ function scrollFunction() {
 
 
     if (isVisible) {
-        document.getElementById('abo').style.color = '#008CBA'
+        document.getElementById('abo').style.color = '#008CBA';
+        document.getElementById('abo').onmouseover = '';
+        document.getElementById('abo').onmouseout = '';
     }
 
     if (isVisible1) {
-        document.getElementById('project').style.color = '#008CBA'
-        document.getElementById('abo').style.color = '#000'
+        document.getElementById('project').style.color = '#008CBA';
+        document.getElementById('project').onmouseover = '';
+        document.getElementById('project').onmouseout = '';
+        document.getElementById('abo').style.color = '#000';
+        document.getElementById('abo').onmouseover = hover;
+        document.getElementById('abo').onmouseout = hoverout;
 
     }
 
     if (isVisible2) {
-        document.getElementById('contact').style.color = '#008CBA'
-        document.getElementById('project').style.color = '#000'
+        document.getElementById('contact').style.color = '#008CBA';
+        document.getElementById('contact').onmouseover = '';
+        document.getElementById('contact').onmouseout = '';
+        document.getElementById('project').style.color = '#000';
+        document.getElementById('project').onmouseover = hover;
+        document.getElementById('project').onmouseout = hoverout;
     }
 
   } else {
