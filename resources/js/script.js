@@ -145,6 +145,8 @@ document.addEventListener('scroll', function (e) {
     let isVisible9 = top > document.querySelector('#get').offsetTop;
     let isVisible10 = top > document.querySelector('#cont').offsetTop;
     let isVisible11 = top > document.querySelector('.detail').offsetTop;
+    let isVisible12 = top > document.querySelector('#copyright').offsetTop;    
+    let isVisible13 = top > document.querySelector('.tou').offsetTop;
    
 
   
@@ -197,6 +199,17 @@ document.addEventListener('scroll', function (e) {
 
     if (isVisible11) {
         let elem = document.querySelectorAll('.detail');
+        for (let i = 0; i < elem.length; i++) {
+            elem[i].classList.add('animate');
+        }
+    }
+
+    if (isVisible12) {
+        document.getElementById('copyright').classList.add('animate');
+    }
+
+    if (isVisible13) {
+        let elem = document.querySelectorAll('.tou');
         for (let i = 0; i < elem.length; i++) {
             elem[i].classList.add('animate');
         }

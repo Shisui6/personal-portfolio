@@ -612,6 +612,44 @@ footer li {
     cursor: pointer;
 }
 
+.tou {
+    position: relative;
+    opacity: 0;
+    bottom:-40px;
+}
+
+#copyright {
+    opacity: 0;
+}
+
+#copyright.animate {
+    animation: fade-in 2s forwards;
+}
+
+.tou.animate {
+    animation: animate-bottom 1.3s forwards;
+}
+
+#tou1 {
+    animation-delay: .5s;
+}
+
+#tou2 {
+    animation-delay: 1s;
+}
+
+#tou3 {
+    animation-delay: 1.5s;
+}
+
+#tou4 {
+    animation-delay: 2s;
+}
+
+#tou5 {
+    animation-delay: 2.5s;
+}
+
 @media only screen and (max-width:620px) {
     /* For mobile phones: */
     header {
