@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    /* border: 0.1px solid black;    */
+    /* border: 0.1px solid black;     */
 }
 
 html {
@@ -329,7 +329,6 @@ hr {
 
 #sec3 {
     margin-top: 80px;
-    height: 500px;
     margin-bottom: 80px;
 }
 
@@ -462,7 +461,6 @@ hr {
 
 #sec4 {
     margin-top: 120px;
-    height: 700px;
 }
 
 #sec4 h2 {
@@ -615,7 +613,7 @@ footer li {
 .tou {
     position: relative;
     opacity: 0;
-    bottom:-40px;
+    bottom:-30px;
 }
 
 #copyright {
@@ -635,31 +633,118 @@ footer li {
 }
 
 #tou2 {
-    animation-delay: 1s;
+    animation-delay: .8s;
 }
 
 #tou3 {
-    animation-delay: 1.5s;
+    animation-delay: 1.1s;
 }
 
 #tou4 {
-    animation-delay: 2s;
+    animation-delay: 1.4s;
 }
 
 #tou5 {
-    animation-delay: 2.5s;
+    animation-delay: 1.7s;
 }
+
+
+@media (max-width:990px) and (min-width:630px) {
+    header {
+        width: 55%;
+        left: 23%;
+    }
+}
+
 
 @media only screen and (max-width:620px) {
     /* For mobile phones: */
     header {
-        width: 98%;
-      
+        width: 100%;
+        left: 0%;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
+    nav {
+        margin-top: 35px;
+        transition: 0.4s;
+    }
+    
+    nav li {
+        padding: 5px 10px;
+        margin-left: 5px;
     }
 
-    /* header li {
-        top: 0px;
-        margin-left: 9%;
-        left: 0%;
-    } */
+    .intro h1 {
+        font-size: 35px;
+    }
+    
+    .intro h2 {
+        font-size: 35px;
+    }
+
+    #soft {
+        font-size: 25px;
+    }
+
+    #sec2 {
+        grid-template-columns: 100%;
+        grid-template-rows: 400px 550px;
+        grid-gap: 0%;
+        padding: 20px 10px;
+    }
+
+    #sec2 img {
+        height: 350px;
+        width: 95%;
+    }
+
+    .about {
+        padding-top: 0px;
+        text-align: center;
+    }
+
+    .skills {
+        width: 85%;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 100px 100px;
+        grid-gap: 6%;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+    .skills i {
+        margin-left: 0px;
+    }
+
+    .skills h3 {
+        padding-left: 0px;
+    }
+
+    .gallery {
+        grid-template-columns: 100%;
+        grid-template-rows: 300px 300px 300px;
+    }
+
+    .contact {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 550px 550px;
+        grid-gap: 6%;
+        padding: 20px 10px;
+    }
+    button {
+        width: 46%;
+    }
+
+    .detail {
+        right:-20px;
+    }
+
+    footer {
+        height: 270px;
+    }
 }
