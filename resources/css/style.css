@@ -42,6 +42,7 @@ nav li {
 nav a {
     color: #fff;
     text-decoration: none;
+    transition: .3s;
 }
 
 nav li a:hover {
@@ -404,8 +405,8 @@ hr {
 }
 
 
-#num {
-    background-image: url('../images/number.jpg');
+#jam {
+    background-image: url('../images/spotify.jpg');
     animation-delay: 3.6s;
 }
 
@@ -449,9 +450,18 @@ hr {
     text-align: center;
 }
 
-.text h3 {
+.text a {
       font-size: 23px;
       font-weight: 500;
+      text-decoration: none;
+}
+
+.text a:visited {
+    color: #fff;
+}
+
+.text a:active {
+    color: rgb(208, 207, 207);
 }
 
 .text h4 {
