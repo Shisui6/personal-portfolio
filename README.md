@@ -8,7 +8,9 @@ A front-end website to showcase the different projects I've built. Built using H
 
 ## Technologies
 
-- HTML | CSS | JavaScript
+- HTML 
+- CSS 
+- JavaScript
 
 ## Live Demo 
 
