@@ -1,5 +1,5 @@
 let i = 0;
-let content = ['Software Developer.','Student.', 'Traveler.'];
+let content = ['Software Developer.','Student.', 'Traveler.', 'Remote Professional.', 'Micronaut.'];
 let part = 0;
 let interval;
 let element = document.getElementById("type");
