@@ -60,6 +60,7 @@ function scrollFunction() {
     var elem = document.getElementsByClassName("whi");
     for (let i = 0; i < elem.length; i++) {
         elem[i].style.color="#000";
+        elem[i].style.fontWeight="normal";
     }
 
     function hover(e) {
@@ -96,15 +97,18 @@ function scrollFunction() {
 
     if (isVisible) {
         document.getElementById('abo').style.color = '#008CBA';
+        document.getElementById('abo').style.fontWeight = 'bold';
         document.getElementById('abo').onmouseover = '';
         document.getElementById('abo').onmouseout = '';
     }
 
     if (isVisible1) {
         document.getElementById('project').style.color = '#008CBA';
+        document.getElementById('project').style.fontWeight = 'bold';
         document.getElementById('project').onmouseover = '';
         document.getElementById('project').onmouseout = '';
         document.getElementById('abo').style.color = '#000';
+        document.getElementById('abo').style.fontWeight = 'normal';
         document.getElementById('abo').onmouseover = hover;
         document.getElementById('abo').onmouseout = hoverout;
 
@@ -112,9 +116,11 @@ function scrollFunction() {
 
     if (isVisible2) {
         document.getElementById('contact').style.color = '#008CBA';
+        document.getElementById('contact').style.fontWeight = 'bold';
         document.getElementById('contact').onmouseover = '';
         document.getElementById('contact').onmouseout = '';
         document.getElementById('project').style.color = '#000';
+        document.getElementById('project').style.fontWeight = 'normal';
         document.getElementById('project').onmouseover = hover;
         document.getElementById('project').onmouseout = hoverout;
     }

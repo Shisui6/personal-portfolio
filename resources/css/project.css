@@ -235,8 +235,6 @@ footer li {
     header {
         width: 100%;
         left: 0%;
-        border-bottom-left-radius: 0px;
-        border-bottom-right-radius: 0px;
     }
     
     nav {
@@ -246,7 +244,11 @@ footer li {
     
     nav li {
         padding: 5px 10px;
-        margin-left: 5px;
+        margin-left: 0px;
+    }
+
+    #sec1 {
+        background-image: url('../images/project-small.jpg');
     }
 
     .intro h1 {
@@ -259,6 +261,10 @@ footer li {
 
     #soft {
         font-size: 25px;
+    }
+
+    .path {
+        font-size: 13px;
     }
 
     #sec2 {
