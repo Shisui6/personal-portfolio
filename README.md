@@ -4,7 +4,7 @@
 
 A front-end website to showcase the different projects I've built. Built using HTML, CSS, And JavaScript.
 
-![image](https://user-images.githubusercontent.com/37116322/191197618-e6d13ee2-6f5f-4e40-867e-91f4a72d7cfe.png)
+![image](https://user-images.githubusercontent.com/37116322/192164816-75c8d494-cb97-406b-b977-b7c386841e7b.png)
 
 ## Technologies
 
