@@ -394,18 +394,17 @@ hr {
     width: 95%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px;
+    grid-template-rows: 300px 300px;
     margin: 0 auto;
     grid-gap: 30px;
     border-radius: 25px;
 }
 
-#cre {
-    background-image: url('../images/card.jpg');
+#todo {
+    background-image: url('../images/todo.jpg');
     animation-delay: 1.6s;
     
 }
-
 
 #red {
     background-image: url('../images/reddit.jpg');
@@ -416,6 +415,21 @@ hr {
 #jam {
     background-image: url('../images/spotify.jpg');
     animation-delay: 3.6s;
+}
+
+#awe {
+    background-image: url('../images/books.jpg');
+    animation-delay: 4.6s;
+}
+
+#nat {
+    background-image: url('../images/festival.jpg');
+    animation-delay: 5.6s;
+}
+
+#port {
+    background-image: url('../images/port.jpg');
+    animation-delay: 6.6s;
 }
 
 .pro {
@@ -438,44 +452,50 @@ hr {
     width: 100%;
     height: 300px;
     border-radius: 25px;
-    opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: rgba(0, 140, 186, 0);
 }
   
 .pro:hover .overlay {
-    opacity: 0.7;
+    background-color: rgba(0, 140, 186, 0.7);
+}
+
+.pro:hover .text {
+    opacity: 1;
+    transition: .5s ease;
 }
   
 .text {
     color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    padding-top: 60px;
     text-align: center;
+    opacity: 0;
+}
+
+.text p {
+    font-size: 23px;
+    font-weight: 500;
+    color: #fff;
 }
 
 .text a {
-    font-size: 23px;
-    font-weight: 500;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 25px;
     text-decoration: none;
-    color: #fff;
+    color: #8f8f8e;
+    font-size: 12px;
+    letter-spacing: 1.5px;
 }
 
-.text a:visited {
-    color: #fff;
-}
-
-.text a:active {
-    color: rgb(208, 207, 207);
+.text a:hover {
+    background-color: #fff;
 }
 
 .text h4 {
-      font-size: 16px;
-      font-weight: 300;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 40px;
 }
 
 #sec4 {
@@ -613,7 +633,7 @@ footer {
     background-color: #008CBA;
     color: #fff;
     height: 200px;
-    padding: 25px ;
+    padding: 25px;
 }
 
 footer ul {
