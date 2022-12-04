@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Home page for Okemdi's personal portfolio">
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e83d856101.js" crossorigin="anonymous"></script>
+  <title>Okemdi's Portfolio</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" class="nav-link">Home</a></li>
+        <li><a href="#" class="nav-link about-sec">About</a></li>
+        <li><a href="#" class="nav-link portfolio-sec">Projects</a></li>
+        <li><a href="#" class="nav-link contact-sec">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-section">
+      <h2 class="hello">Hello, I'm</h2>
+      <h1><strong>Okemdi Udeh</strong></h1>
+      <h2 id="soft">I am a <span id="type"></span><div id="cursor"></div></h2>
+      <a href="#sec2"><i class="fa-solid fa-arrow-down fa-lg fa-bounce" style="--fa-animation-duration: 2s"></i></a>
+    </section>
+    <section class="about-section" id="about-sec">
+      <div>
+        <img alt="profile" id="profile-img" srcset="./resources/images/profile-small.jpg 340w, ./resources/images/profile.jpg 540w">
+      </div>
+      <div class="about">
+        <div id="ab-cont">
+            <h3 class="ab">About Me</h3>
+            <h2>Who am I?</h2>
+            <p><strong>Hi I'm Okemdi Udeh</strong> I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
+        </div>
+        <div class="skills">
+          <div id="skill1">
+            <i class="fa-brands fa-html5 fa-2xl"></i>
+            <h3>HTML</h3>
+            <hr class="html">
+          </div>
+          <div id="skill2">
+            <i class="fa-brands fa-css3-alt fa-2xl"></i>
+            <h3>CSS</h3>
+            <hr class="css">
+          </div>
+          <div id="skill3">
+            <i class="fa-brands fa-square-js fa-2xl"></i>
+            <h3>JavaScript</h3>
+            <hr class="js">
+          </div>  
+          <div id="skill4">
+            <i class="fa-brands fa-react fa-2xl"></i>
+            <h3>React</h3>
+            <hr class="react">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="portfolio-section" id="portfolio-sec">
+      <h2 id="fea">Featured <strong>Portfolio</strong></h2>
+        <ul id="fil">
+          <li><a href="#">All</a></li>
+          <li><a href="#">Front-End</a></li>
+          <li><a href="#">Back-End</a></li>
+          <li><a href="#">Full-Stack</a></li>
+        </ul>
+        <div class="gallery" id="gallery-id"></div>
+    </section>
+    <section class="contact-section" id="contact-sec">
+      <h2 id="get">Get <strong>In Touch</strong></h2>
+      <div class="contact">
+        <div id="cont">
+          <h3>Get In Touch</h3>
+          <label for="name"></label>
+          <input type="text" id="first" name="name" placeholder="Your name....">
+          <label for="email"></label>
+          <input type="text" id="email" name="email" placeholder="Your email....">
+          <label for="phone"></label>
+          <input type="text" id="phone" name="phone" placeholder="Your phone....">
+          <label for="ques"></label>
+          <input type="textarea" id="message" name="message" placeholder="Write a message....">
+          <button>Send Message</button>
+        </div>
+        <div>
+          <h3 id="det" class="detail">My Contact Details</h3>
+          <div id="det1" class="detail">
+            <h4><i class="fa-solid fa-envelope"></i>Email</h4>
+            <p>ukemdi@gmail.com</p>
+          </div>
+          <div id="det2" class="detail">
+            <h4><i class="fa-solid fa-phone"></i>Phone</h4>
+            <p>+234 902 911 9162</p>
+          </div>
+          <div id="det3" class="detail">
+            <h4><i class="fa-solid fa-location-dot"></i>Location</h4>
+            <p>Lagos, Nigeria</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p id="copyright">Copyright &copy 2022 All rights reserved | A project by Okemdi Udeh</p>
+    <ul>
+      <li class="tou" id="tou2"><a href="https://twitter.com/ukemdi007"><i class="fa-brands fa-twitter fa-xl" style="color: #fff;"></i></a></li>
+      <li class="tou" id="tou4"><a href="https://www.linkedin.com/in/okemdi-udeh-1b472615a/"><i class="fa-brands fa-linkedin fa-xl" style="color: #fff;"></i></a></li>
+      <li class="tou" id="tou5"><a href="https://github.com/Shisui6"><i class="fa-brands fa-github fa-xl" style="color: #fff;"></i></a></li>
+    </ul>
+</footer>
+</body>
+</html>
