@@ -209,6 +209,15 @@ nav a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+#profile-img {
+  opacity: 0;
+}
+
+#profile-img.animate {
+  animation: fade-in 2s forwards;
+  animation-delay: 0.2s;
+}
+
 .about {
   padding-top: 0;
   text-align: center;
@@ -240,6 +249,17 @@ nav a {
   margin: auto;
 }
 
+#ab-cont {
+  position: relative;
+  opacity: 0;
+  left: -70px;
+}
+
+#ab-cont.animate {
+  animation: animate-left 1.5s forwards;
+  animation-delay: 1.2s;
+}
+
 .skills {
   margin: 0 auto;
   display: grid;
@@ -256,6 +276,8 @@ nav a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   text-align: center;
+  position: relative;
+  opacity: 0;
 }
 
 .skills h3 {
@@ -317,6 +339,42 @@ hr {
   width: 92%;
 }
 
+#skill1 {
+  left: -40px;
+}
+
+#skill1.animate {
+  animation: animate-left 1s forwards;
+  animation-delay: 2s;
+}
+
+#skill2 {
+  right: -40px;
+}
+
+#skill2.animate {
+  animation: animate-right 1s forwards;
+  animation-delay: 2.3s;
+}
+
+#skill3 {
+  bottom: -40px;
+}
+
+#skill3.animate {
+  animation: animate-bottom 1s forwards;
+  animation-delay: 2.7s;
+}
+
+#skill4 {
+  bottom: -40px;
+}
+
+#skill4.animate {
+  animation: animate-bottom 1s forwards;
+  animation-delay: 2.9s;
+}
+
 /* Portfolio Section */
 .portfolio-section {
   margin-top: 80px;
@@ -341,6 +399,26 @@ hr {
   padding: 5px 10px;
   cursor: pointer;
   font-weight: 300;
+}
+
+#fea {
+  position: relative;
+  opacity: 0;
+  bottom: -60px;
+}
+
+#fea.animate {
+  animation: animate-bottom 1.3s forwards;
+  animation-delay: 0.2s;
+}
+
+#fil {
+  opacity: 0;
+}
+
+#fil.animate {
+  animation: fade-in 2s forwards;
+  animation-delay: 1s;
 }
 
 #fil a {
@@ -369,6 +447,12 @@ hr {
   border-radius: 25px;
   cursor: pointer;
   position: relative;
+  opacity: 0;
+  bottom: -50px;
+}
+
+.project.animate {
+  animation: animate-bottom 1.2s forwards;
 }
 
 .overlay {
@@ -434,6 +518,17 @@ hr {
   margin-bottom: 1.5em;
 }
 
+#get {
+  position: relative;
+  opacity: 0;
+  bottom: -60px;
+}
+
+#get.animate {
+  animation: animate-bottom 1.3s forwards;
+  animation-delay: 0.2s;
+}
+
 .contact {
   width: 90%;
   margin: 0 auto;
@@ -442,6 +537,17 @@ hr {
   grid-template-columns: 100%;
   grid-template-rows: 550px 550px;
   grid-gap: 6%;
+}
+
+#cont {
+  position: relative;
+  opacity: 0;
+  left: -70px;
+}
+
+#cont.animate {
+  animation: animate-left 1.5s forwards;
+  animation-delay: 0.5s;
 }
 
 .contact h3 {
@@ -463,6 +569,32 @@ hr {
   font-size: 16px;
   margin-bottom: 30px;
   line-height: 27.2px;
+}
+
+.detail {
+  position: relative;
+  opacity: 0;
+  right: -40px;
+}
+
+.detail.animate {
+  animation: animate-right 1s forwards;
+}
+
+#det {
+  animation-delay: 0.5s;
+}
+
+#det1 {
+  animation-delay: 0.8s;
+}
+
+#det2 {
+  animation-delay: 1s;
+}
+
+#det3 {
+  animation-delay: 1.3s;
 }
 
 input[type=text],
@@ -527,6 +659,36 @@ footer {
   border-radius: 50px;
   margin-right: 15px;
   cursor: pointer;
+}
+
+.tou {
+  position: relative;
+  opacity: 0;
+  bottom: -30px;
+}
+
+#copyright {
+  opacity: 0;
+}
+
+#copyright.animate {
+  animation: fade-in 2s forwards;
+}
+
+.tou.animate {
+  animation: animate-bottom 1.3s forwards;
+}
+
+#tou1 {
+  animation-delay: 0.5s;
+}
+
+#tou2 {
+  animation-delay: 0.8s;
+}
+
+#tou3 {
+  animation-delay: 1.1s;
 }
 
 /* Media Queries */

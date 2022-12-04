@@ -1,5 +1,6 @@
 import './style.css';
 import './modules/typewriter.js';
+import animate from './modules/animate.js';
 import { scrollFunction, highlightLink } from './modules/header.js';
 import profileImg from './images/profile.jpg';
 import redditImg from './images/reddit.jpg';
@@ -18,6 +19,7 @@ profile.srcset = `${profileImg} 340w, ${profileImg} 540w`;
 window.onscroll = () => {
   highlightLink();
   scrollFunction();
+  animate();
 };
 
 // Get relevant elements from the DOM
@@ -74,7 +76,7 @@ projects.forEach((element) => {
   const project = document.createElement('div');
   project.className = 'project';
   project.style.backgroundImage = `url(${element.img})`;
-  // project.style.animationDelay = element.delay;
+  project.style.animationDelay = element.delay;
   project.innerHTML = `
     <div class="overlay">
       <div class="text">
