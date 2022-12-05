@@ -9,15 +9,16 @@ const animate = () => {
   const isVisible6 = top > document.querySelector('#skill5').offsetTop;
   const isVisible7 = top > document.querySelector('#skill6').offsetTop;
   const isVisible8 = top > document.querySelector('#skill7').offsetTop;
-  const isVisible9 = top > document.querySelector('#profile-img').offsetTop;
-  const isVisible10 = top > document.querySelector('#fea').offsetTop;
-  const isVisible11 = top > document.querySelector('#fil').offsetTop;
-  const isVisible12 = top > document.querySelector('.project').offsetTop;
-  const isVisible13 = top > document.querySelector('#get').offsetTop;
-  const isVisible14 = top > document.querySelector('#cont').offsetTop;
-  const isVisible15 = top > document.querySelector('.detail').offsetTop;
-  const isVisible16 = top > document.querySelector('#copyright').offsetTop;
-  const isVisible17 = top > document.querySelector('.tou').offsetTop;
+  const isVisible9 = top > document.querySelector('#coffee-id').offsetTop;
+  const isVisible10 = top > document.querySelector('#profile-img').offsetTop;
+  const isVisible11 = top > document.querySelector('#fea').offsetTop;
+  const isVisible12 = top > document.querySelector('#fil').offsetTop;
+  const isVisible13 = top > document.querySelector('.project').offsetTop;
+  const isVisible14 = top > document.querySelector('#get').offsetTop;
+  const isVisible15 = top > document.querySelector('#cont').offsetTop;
+  const isVisible16 = top > document.querySelector('.detail').offsetTop;
+  const isVisible17 = top > document.querySelector('#copyright').offsetTop;
+  const isVisible18 = top > document.querySelector('.tou').offsetTop;
 
   if (isVisible) {
     document.getElementById('ab-cont').classList.add('animate');
@@ -56,44 +57,48 @@ const animate = () => {
   }
 
   if (isVisible9) {
-    document.getElementById('profile-img').classList.add('animate');
+    document.getElementById('coffee-id').classList.add('animate');
   }
 
   if (isVisible10) {
-    document.getElementById('fea').classList.add('animate');
+    document.getElementById('profile-img').classList.add('animate');
   }
 
   if (isVisible11) {
-    document.getElementById('fil').classList.add('animate');
+    document.getElementById('fea').classList.add('animate');
   }
 
   if (isVisible12) {
+    document.getElementById('fil').classList.add('animate');
+  }
+
+  if (isVisible13) {
     const elem = document.querySelectorAll('.project');
     for (let i = 0; i < elem.length; i += 1) {
       elem[i].classList.add('animate');
     }
   }
 
-  if (isVisible13) {
+  if (isVisible14) {
     document.getElementById('get').classList.add('animate');
   }
 
-  if (isVisible14) {
+  if (isVisible15) {
     document.getElementById('cont').classList.add('animate');
   }
 
-  if (isVisible15) {
+  if (isVisible16) {
     const elem = document.querySelectorAll('.detail');
     for (let i = 0; i < elem.length; i += 1) {
       elem[i].classList.add('animate');
     }
   }
 
-  if (isVisible16) {
+  if (isVisible17) {
     document.getElementById('copyright').classList.add('animate');
   }
 
-  if (isVisible17) {
+  if (isVisible18) {
     const elem = document.querySelectorAll('.tou');
     for (let i = 0; i < elem.length; i += 1) {
       elem[i].classList.add('animate');
