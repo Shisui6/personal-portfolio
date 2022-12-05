@@ -3,6 +3,9 @@ import './modules/typewriter.js';
 import animate from './modules/animate.js';
 import { scrollFunction, highlightLink } from './modules/header.js';
 import profileImg from './images/profile.jpg';
+import reduxImg from './images/redux.png';
+import rubyImg from './images/ruby.png';
+import railsImg from './images/rails.png';
 import redditImg from './images/reddit.jpg';
 import todoImg from './images/todo.jpg';
 import jamImg from './images/spotify.jpg';
@@ -20,6 +23,9 @@ import awesomeDemo from './images/awesome-demo.png';
 const profile = document.getElementById('profile-img');
 profile.src = profileImg;
 profile.srcset = `${profileImg} 340w, ${profileImg} 540w`;
+document.getElementById('redux').src = reduxImg;
+document.getElementById('ruby').src = rubyImg;
+document.getElementById('rails').src = railsImg;
 
 // When the user scrolls down 80px from the top of the document, change the header's style
 window.onscroll = () => {

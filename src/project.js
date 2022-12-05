@@ -24,6 +24,7 @@ const title = document.getElementById('path-title');
 title.textContent = selected.title;
 const project = document.createElement('section');
 project.className = 'project-details';
+project.id = 'project-section';
 project.innerHTML = `
   <div>
     <img alt="card" src=${selected.imgDemo} id="project-img">

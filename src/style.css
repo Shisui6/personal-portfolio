@@ -189,17 +189,17 @@ nav a {
 }
 
 /* About Section */
-.about-section {
+.about-main {
   width: 100%;
   margin-top: 80px;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 400px 550px;
+  grid-template-rows: 400px 500px;
   padding: 20px 10px;
   padding-right: 20px;
 }
 
-.about-section img {
+.about-main img {
   height: 350px;
   width: 95%;
   display: block;
@@ -218,7 +218,7 @@ nav a {
   animation-delay: 0.2s;
 }
 
-.about {
+.about-text {
   padding-top: 0;
   text-align: center;
 }
@@ -231,7 +231,7 @@ nav a {
   letter-spacing: 5px;
 }
 
-.about-section h2 {
+.about-main h2 {
   font-size: 18px;
   margin-bottom: 2em;
   font-weight: 700;
@@ -240,13 +240,36 @@ nav a {
   line-height: 1.8;
 }
 
-.about-section p {
+.about-main p {
   font-weight: 300;
   font-size: 15px;
   line-height: 1.8;
   color: rgba(0, 0, 0, 0.6);
   width: 90%;
   margin: auto;
+  margin-bottom: 80px;
+}
+
+.about-main a {
+  padding: 15px 20px;
+  background-color: #666;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#hire {
+  background-color: #008cba;
+  margin-right: 10px;
+}
+
+#hire:hover {
+  background-color: #005571;
+}
+
+.about-main a:hover {
+  background-color: rgb(73, 73, 73);
 }
 
 #ab-cont {
@@ -260,16 +283,41 @@ nav a {
   animation-delay: 1.2s;
 }
 
+.tech h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 1.5em;
+}
+
+#tec {
+  position: relative;
+  opacity: 0;
+  bottom: -60px;
+}
+
+#tec.animate {
+  animation: animate-bottom 1.3s forwards;
+  animation-delay: 0.2s;
+}
+
 .skills {
   margin: 0 auto;
   display: grid;
   padding: 20px 10px;
   width: 85%;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 80px 80px;
   gap: 6%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 120px;
+}
+
+.skills img {
+  width: 32px;
+  height: 32px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .skills div {
@@ -335,6 +383,21 @@ hr {
   color: #8edef4;
 }
 
+.redux {
+  color: #8059c2;
+  background-color: #8059c2;
+}
+
+.ruby {
+  color: #dd3733;
+  background-color: #dd3733;
+}
+
+.rails {
+  color: #d30001;
+  background-color: #d30001;
+}
+
 .skills div:hover > hr {
   width: 92%;
 }
@@ -367,12 +430,43 @@ hr {
 }
 
 #skill4 {
-  bottom: -40px;
+  top: -40px;
 }
 
 #skill4.animate {
-  animation: animate-bottom 1s forwards;
+  animation: animate-top 1s forwards;
   animation-delay: 2.9s;
+}
+
+#skill5 {
+  left: -40px;
+}
+
+.skill-icon h3 {
+  margin-top: 0;
+}
+
+#skill5.animate {
+  animation: animate-left 1s forwards;
+  animation-delay: 3.1s;
+}
+
+#skill6 {
+  right: -40px;
+}
+
+#skill6.animate {
+  animation: animate-right 1s forwards;
+  animation-delay: 3.3s;
+}
+
+#skill7 {
+  bottom: -40px;
+}
+
+#skill7.animate {
+  animation: animate-bottom 1s forwards;
+  animation-delay: 3.5s;
 }
 
 /* Portfolio Section */
@@ -529,7 +623,7 @@ hr {
   animation-delay: 0.2s;
 }
 
-.contact {
+.contact-form {
   width: 90%;
   margin: 0 auto;
   display: grid;
@@ -550,13 +644,13 @@ hr {
   animation-delay: 0.5s;
 }
 
-.contact h3 {
+.contact-form h3 {
   font-size: 22px;
   font-weight: 200;
   margin-bottom: 3rem;
 }
 
-.contact h4 {
+.contact-form h4 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 10px;
@@ -564,7 +658,7 @@ hr {
   color: #008cba;
 }
 
-.contact p {
+.contact-form p {
   margin-top: 0;
   font-size: 16px;
   margin-bottom: 30px;
@@ -607,7 +701,7 @@ input[type=text],
   border-radius: 10px;
 }
 
-.contact button {
+.contact-form button {
   width: 46%;
   color: #fff;
   padding: 15px;
@@ -625,7 +719,7 @@ input[type=text],
   transition: 0.3s;
 }
 
-.contact button:hover {
+.contact-form button:hover {
   background-color: #00739a;
 }
 
@@ -853,32 +947,33 @@ footer {
     font-size: 30px;
   }
 
-  .about-section {
+  .about-main {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 550px;
     grid-gap: 3%;
   }
 
-  .about-section img {
+  .about-main img {
     height: 500px;
     width: 88%;
   }
 
-  .about-section p {
+  .about-main p {
     width: 100%;
-    margin: 0;
+    margin-bottom: 60px;
   }
 
-  .about {
+  .about-text {
     padding-top: 50px;
     text-align: left;
   }
 
   .skills {
-    width: 90%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 85%;
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 80px;
-    grid-gap: 4%;
+    grid-gap: 2%;
+    padding-bottom: 50px;
   }
 
   .gallery {
@@ -887,12 +982,12 @@ footer {
     grid-template-rows: 300px 300px;
   }
 
-  .contact {
+  .contact-form {
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 550px;
   }
 
-  .contact button {
+  .contact-form button {
     width: 22%;
   }
 

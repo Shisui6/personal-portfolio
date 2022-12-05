@@ -16,9 +16,9 @@
     <nav>
       <ul>
         <li><a href="#" class="nav-link">Home</a></li>
-        <li><a href="#about-sec" class="nav-link about-sec">About</a></li>
-        <li><a href="#portfolio-sec" class="nav-link portfolio-sec">Projects</a></li>
-        <li><a href="#contact-sec" class="nav-link contact-sec">Contact</a></li>
+        <li><a href="#about" class="nav-link about">About</a></li>
+        <li><a href="#portfolio" class="nav-link portfolio">Projects</a></li>
+        <li><a href="#contact" class="nav-link contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -27,18 +27,25 @@
       <h2 class="hello">Hello, I'm</h2>
       <h1><strong>Okemdi Udeh</strong></h1>
       <h2 id="soft">I am a <span id="type"></span><div id="cursor"></div></h2>
-      <a href="#sec2"><i class="fa-solid fa-arrow-down fa-lg fa-bounce" style="--fa-animation-duration: 2s"></i></a>
+      <a href="#about"><i class="fa-solid fa-arrow-down fa-lg fa-bounce" style="--fa-animation-duration: 2s"></i></a>
     </section>
-    <section class="about-section" id="about-sec">
-      <div>
-        <img alt="profile" id="profile-img" srcset="./resources/images/profile-small.jpg 340w, ./resources/images/profile.jpg 540w">
-      </div>
-      <div class="about">
-        <div id="ab-cont">
+    <section class="about-section" id="about">
+      <div class="about-main">
+        <div>
+          <img alt="profile" id="profile-img" srcset="./resources/images/profile-small.jpg 340w, ./resources/images/profile.jpg 540w">
+        </div>
+        <div class="about-text">
+          <div id="ab-cont">
             <h3 class="ab">About Me</h3>
             <h2>Who am I?</h2>
-            <p><strong>Hi I'm Okemdi Udeh</strong> I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hesitate to contact me.</p>
+            <p><strong>Hi I'm Okemdi Udeh</strong> A full-stack software engineer with experience in JavaScript, React, Redux, and Ruby and a passion for developing aesthetically pleasing digital solutions. I spend most of my time working remotely and building applications. Check out some of my work below, and if you like what you see, don't hesitate to contact me.</p>
+            <a href="#contact" id="hire">Hire Me</a>
+            <a href="https://docs.google.com/document/d/18nmBb6pk7FVuNgHXu23lHZ41NHvGuOs09vBzDFf5GEQ/edit?usp=sharing" target="_blank">View CV</a>
+          </div>
         </div>
+      </div>
+      <div class="tech">
+        <h2 id="tec">Tech <strong>Stack</strong></h2>
         <div class="skills">
           <div id="skill1">
             <i class="fa-brands fa-html5 fa-2xl"></i>
@@ -60,10 +67,25 @@
             <h3>React</h3>
             <hr class="react">
           </div>
+          <div id="skill5" class="skill-icon">
+            <img id="redux" alt="redux">
+            <h3>Redux</h3>
+            <hr class="redux">
+          </div>
+          <div id="skill6" class="skill-icon">
+            <img id="ruby" alt="ruby">
+            <h3>Ruby</h3>
+            <hr class="ruby">
+          </div>
+          <div id="skill7"class="skill-icon">
+            <img id="rails" alt="rails">
+            <h3>Rails</h3>
+            <hr class="rails">
+          </div>
         </div>
       </div>
     </section>
-    <section class="portfolio-section" id="portfolio-sec">
+    <section class="portfolio-section" id="portfolio">
       <h2 id="fea">Featured <strong>Portfolio</strong></h2>
         <ul id="fil">
           <li><a href="#">All</a></li>
@@ -73,9 +95,9 @@
         </ul>
         <div class="gallery" id="gallery-id"></div>
     </section>
-    <section class="contact-section" id="contact-sec">
+    <section class="contact-section" id="contact">
       <h2 id="get">Get <strong>In Touch</strong></h2>
-      <div class="contact">
+      <div class="contact-form">
         <div id="cont">
           <h3>Get In Touch</h3>
           <label for="name"></label>
