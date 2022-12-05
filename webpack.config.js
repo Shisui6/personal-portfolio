@@ -1,22 +1,37 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const pages = ['index', 'project'];
+
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: pages.reduce((config, page) => {
+    config[page] = `./src/${page}.js`;
+    return config;
+  }, {}),
   output: {
-    filename: 'main.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
     static: './dist',
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/index.html',
-      favicon: './src/images/favicon.png',
-    }),
-  ],
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
+  plugins: [].concat(
+    pages.map(
+      (page) => new HtmlWebpackPlugin({
+        inject: true,
+        template: `./src/${page}.html`,
+        filename: `${page}.html`,
+        favicon: './src/images/favicon.png',
+        chunks: [page],
+      }),
+    ),
+  ),
   module: {
     rules: [
       {
