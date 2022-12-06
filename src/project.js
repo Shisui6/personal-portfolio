@@ -1,12 +1,16 @@
+// Imports
 import './style.css';
 import { scrollFunction } from './modules/header.js';
 
+// When the user scrolls, call scrollFunction
 window.onscroll = () => {
   scrollFunction();
 };
 
+// Get the currently selected project from local storage
 const selected = JSON.parse(localStorage.getItem('project'));
 
+// Function to display the correct technologies on screen
 const tech = () => {
   if (selected.tech.length === 3) {
     return `
@@ -19,6 +23,7 @@ const tech = () => {
   return '<i class="fa-brands fa-react per"></i>';
 };
 
+// On page load, append the project to the DOM
 const main = document.getElementById('project-main');
 const title = document.getElementById('path-title');
 title.textContent = selected.title;
@@ -40,5 +45,3 @@ project.innerHTML = `
 `;
 
 main.appendChild(project);
-
-export default selected;

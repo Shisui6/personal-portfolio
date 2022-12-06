@@ -1,3 +1,4 @@
+// Imports
 import './style.css';
 import './modules/typewriter.js';
 import animate from './modules/animate.js';
@@ -19,7 +20,7 @@ import redditDemo from './images/reddit-demo.png';
 import jammingDemo from './images/jamming-demo.png';
 import awesomeDemo from './images/awesome-demo.png';
 
-// Set the src for the profile image
+// Set src for images
 const profile = document.getElementById('profile-img');
 profile.src = profileImg;
 profile.srcset = `${profileImg} 340w, ${profileImg} 540w`;
@@ -27,16 +28,53 @@ document.getElementById('redux').src = reduxImg;
 document.getElementById('ruby').src = rubyImg;
 document.getElementById('rails').src = railsImg;
 
-// When the user scrolls down 80px from the top of the document, change the header's style
+// Update website style and animate elements when user scrolls
 window.onscroll = () => {
   highlightLink();
   scrollFunction();
   animate();
 };
 
+// Function to produce counting animation
+const animateCounter = () => {
+  const valueDisplays = document.querySelectorAll('.num');
+  const interval = 4000;
+
+  valueDisplays.forEach((valueDisplay) => {
+    let startValue = 0;
+    const endValue = parseInt(valueDisplay.getAttribute('data-val'), 10);
+    const duration = Math.floor(interval / endValue);
+    const counter = setInterval(() => {
+      startValue += 1;
+      valueDisplay.textContent = startValue;
+      if (startValue === endValue) {
+        clearInterval(counter);
+      }
+    }, duration);
+  });
+};
+
+// Function to check when an element is visible on screen
+const onVisible = (element, callback) => {
+  new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.intersectionRatio > 0) {
+        callback(element);
+        observer.disconnect();
+      }
+    });
+  }).observe(element);
+};
+
+// Run counting animation when coffee section is visible
+onVisible(document.querySelector('#coffee-id'), () => {
+  animateCounter();
+});
+
 // Get relevant elements from the DOM
 const gallery = document.getElementById('gallery-id');
 
+// Projects array
 const projects = [
   {
     id: 1,
@@ -47,7 +85,7 @@ const projects = [
     imgDemo: redditDemo,
     source: 'https://github.com/Shisui6/reddit-app',
     demo: 'https://shisui-reddit-app.netlify.app/',
-    delay: '1.6s',
+    delay: '1s',
   },
   {
     id: 2,
@@ -58,7 +96,7 @@ const projects = [
     imgDemo: mealDemo,
     source: 'https://github.com/Shisui6/meal-app',
     demo: 'https://shisui6.github.io/meal-app/',
-    delay: '2.6s',
+    delay: '1.6s',
   },
   {
     id: 3,
@@ -69,7 +107,7 @@ const projects = [
     imgDemo: jammingDemo,
     source: 'https://github.com/Shisui6/jammming',
     demo: 'https://spotify1-playlist-creator.netlify.app/',
-    delay: '3.6s',
+    delay: '2.2s',
   },
   {
     id: 4,
@@ -80,7 +118,7 @@ const projects = [
     imgDemo: todoDemo,
     source: 'https://github.com/Shisui6/to-do-list',
     demo: 'https://shisui6.github.io/to-do-list/dist/',
-    delay: '4.6s',
+    delay: '2.8s',
   },
   {
     id: 5,
@@ -91,7 +129,7 @@ const projects = [
     imgDemo: leaderboardDemo,
     source: 'https://github.com/Shisui6/leaderboard',
     demo: 'https://shisui6.github.io/leaderboard/',
-    delay: '5.6s',
+    delay: '3.4s',
   },
   {
     id: 6,
@@ -102,10 +140,11 @@ const projects = [
     imgDemo: awesomeDemo,
     source: 'https://github.com/Shisui6/awesome-books',
     demo: 'https://shisui6.github.io/awesome-books/',
-    delay: '6.6s',
+    delay: '4.0s',
   },
 ];
 
+// Append each project to the DOM on page load
 projects.forEach((element) => {
   let techString = '';
 

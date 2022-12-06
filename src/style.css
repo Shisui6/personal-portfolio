@@ -408,7 +408,7 @@ hr {
 
 #skill1.animate {
   animation: animate-left 1s forwards;
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 #skill2 {
@@ -417,7 +417,7 @@ hr {
 
 #skill2.animate {
   animation: animate-right 1s forwards;
-  animation-delay: 2.3s;
+  animation-delay: 1.3s;
 }
 
 #skill3 {
@@ -426,7 +426,7 @@ hr {
 
 #skill3.animate {
   animation: animate-bottom 1s forwards;
-  animation-delay: 2.7s;
+  animation-delay: 1.7s;
 }
 
 #skill4 {
@@ -435,7 +435,7 @@ hr {
 
 #skill4.animate {
   animation: animate-top 1s forwards;
-  animation-delay: 2.9s;
+  animation-delay: 1.9s;
 }
 
 #skill5 {
@@ -448,7 +448,7 @@ hr {
 
 #skill5.animate {
   animation: animate-left 1s forwards;
-  animation-delay: 3.1s;
+  animation-delay: 2.1s;
 }
 
 #skill6 {
@@ -457,7 +457,7 @@ hr {
 
 #skill6.animate {
   animation: animate-right 1s forwards;
-  animation-delay: 3.3s;
+  animation-delay: 2.3s;
 }
 
 #skill7 {
@@ -466,7 +466,7 @@ hr {
 
 #skill7.animate {
   animation: animate-bottom 1s forwards;
-  animation-delay: 3.5s;
+  animation-delay: 2.5s;
 }
 
 .coffee {
@@ -488,13 +488,33 @@ hr {
   margin-bottom: 120px;
 }
 
-#coffee-id {
+#coff1,
+#coff2,
+#coff3,
+#coff4 {
+  position: relative;
   opacity: 0;
+  bottom: -40px;
 }
 
-#coffee-id.animate {
-  animation: fade-in 1s forwards;
-  animation-delay: 3.7s;
+#coff1.animate {
+  animation: animate-bottom 1s forwards;
+  animation-delay: 1s;
+}
+
+#coff2.animate {
+  animation: animate-bottom 1s forwards;
+  animation-delay: 1.2s;
+}
+
+#coff3.animate {
+  animation: animate-bottom 1s forwards;
+  animation-delay: 1.4s;
+}
+
+#coff4.animate {
+  animation: animate-bottom 1s forwards;
+  animation-delay: 1.6s;
 }
 
 .coffee p {

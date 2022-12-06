@@ -1,3 +1,4 @@
+// Function to change navbar style on window scroll
 export const scrollFunction = () => {
   const header = document.querySelector('header');
   const nav = document.querySelector('nav');
@@ -40,7 +41,7 @@ export const scrollFunction = () => {
   }
 };
 
-// Highligh visible section of webpage on window scroll
+// Function to highligh visible section of webpage in navbar on window scroll
 export const highlightLink = () => {
   const sections = document.querySelectorAll('section');
   const navLi = document.getElementsByClassName('nav-link');
