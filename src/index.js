@@ -10,7 +10,7 @@ import railsImg from './images/rails.png';
 import redditImg from './images/reddit.jpg';
 import todoImg from './images/todo.jpg';
 import jamImg from './images/spotify.jpg';
-import bookImg from './images/books.jpg';
+import calcImg from './images/calc.jpg';
 import mealImg from './images/meal.jpg';
 import leaderImg from './images/leader.jpg';
 import mealDemo from './images/meal-demo.png';
@@ -18,7 +18,7 @@ import todoDemo from './images/todo-demo.png';
 import leaderboardDemo from './images/leaderboard-demo.png';
 import redditDemo from './images/reddit-demo.png';
 import jammingDemo from './images/jamming-demo.png';
-import awesomeDemo from './images/awesome-demo.png';
+import calcDemo from './images/calc-demo.png';
 
 // Set src for images
 const profile = document.getElementById('profile-img');
@@ -111,13 +111,13 @@ const projects = [
   },
   {
     id: 4,
-    title: 'My Day',
-    desc: 'To-do list is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
-    tech: ['HTML', 'CSS', 'JS'],
-    img: todoImg,
-    imgDemo: todoDemo,
-    source: 'https://github.com/Shisui6/to-do-list',
-    demo: 'https://shisui6.github.io/to-do-list/dist/',
+    title: 'Math Magicians',
+    desc: 'Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations and read a random math-related quote.',
+    tech: ['React'],
+    img: calcImg,
+    imgDemo: calcDemo,
+    source: 'https://github.com/Shisui6/math-magicians',
+    demo: 'https://shisui-math-magicians.netlify.app/',
     delay: '2.8s',
   },
   {
@@ -133,13 +133,13 @@ const projects = [
   },
   {
     id: 6,
-    title: 'Awesome Books',
-    desc: 'Awesome books is a simple web application that displays a list of books and allows you to add and remove books from that list',
+    title: 'My Day',
+    desc: 'To-do list is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
     tech: ['HTML', 'CSS', 'JS'],
-    img: bookImg,
-    imgDemo: awesomeDemo,
-    source: 'https://github.com/Shisui6/awesome-books',
-    demo: 'https://shisui6.github.io/awesome-books/',
+    img: todoImg,
+    imgDemo: todoDemo,
+    source: 'https://github.com/Shisui6/to-do-list',
+    demo: 'https://shisui6.github.io/to-do-list/dist/',
     delay: '4.0s',
   },
 ];

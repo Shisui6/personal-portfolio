@@ -814,6 +814,15 @@ footer {
   bottom: -30px;
 }
 
+.foot-link {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.foot-link:hover {
+  color: #e3e3e3;
+}
+
 #copyright {
   opacity: 0;
 }
@@ -858,7 +867,7 @@ footer {
 
 /* Project page */
 .project-intro {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/project.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/project1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -116,18 +116,16 @@
     <section class="contact-section" id="contact">
       <h2 id="get">Get <strong>In Touch</strong></h2>
       <div class="contact-form">
-        <div id="cont">
+        <form id="cont" method="POST" name="contact" data-netlify="true">
           <h3>Get In Touch</h3>
           <label for="name"></label>
-          <input type="text" id="first" name="name" placeholder="Your name....">
+          <input type="text" id="first" name="name" placeholder="Your name...." required>
           <label for="email"></label>
-          <input type="text" id="email" name="email" placeholder="Your email....">
-          <label for="phone"></label>
-          <input type="text" id="phone" name="phone" placeholder="Your phone....">
+          <input type="text" id="email" name="email" placeholder="Your email...." required>
           <label for="ques"></label>
-          <input type="textarea" id="message" name="message" placeholder="Write a message....">
-          <button>Send Message</button>
-        </div>
+          <input type="textarea" id="message" name="message" placeholder="Write a message...." required>
+          <button type="submit">Send Message</button>
+        </form>
         <div>
           <h3 id="det" class="detail">My Contact Details</h3>
           <div id="det1" class="detail">
@@ -149,9 +147,9 @@
   <footer class="footer">
     <p id="copyright">Copyright &copy 2022 All rights reserved | A project by Okemdi Udeh</p>
     <ul>
-      <li class="tou" id="tou1"><a href="https://twitter.com/ukemdi007"><i class="fa-brands fa-twitter fa-xl" style="color: #fff;"></i></a></li>
-      <li class="tou" id="tou2"><a href="https://www.linkedin.com/in/okemdi-udeh-1b472615a/"><i class="fa-brands fa-linkedin fa-xl" style="color: #fff;"></i></a></li>
-      <li class="tou" id="tou3"><a href="https://github.com/Shisui6"><i class="fa-brands fa-github fa-xl" style="color: #fff;"></i></a></li>
+      <li class="tou" id="tou1"><a href="https://twitter.com/ukemdi007"><i class="fa-brands fa-twitter fa-xl foot-link"></i></a></li>
+      <li class="tou" id="tou2"><a href="https://www.linkedin.com/in/okemdi-udeh-1b472615a/"><i class="fa-brands fa-linkedin fa-xl foot-link"></i></a></li>
+      <li class="tou" id="tou3"><a href="https://github.com/Shisui6"><i class="fa-brands fa-github fa-xl foot-link"></i></a></li>
     </ul>
 </footer>
 </body>
