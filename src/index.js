@@ -3,7 +3,7 @@ import './style.css';
 import './modules/typewriter.js';
 import animate from './modules/animate.js';
 import { scrollFunction, highlightLink } from './modules/header.js';
-import profileImg from './images/profile1.jpg';
+import profileImg from './images/profile1.JPG';
 import reduxImg from './images/redux.png';
 import rubyImg from './images/ruby.png';
 import railsImg from './images/rails.png';
