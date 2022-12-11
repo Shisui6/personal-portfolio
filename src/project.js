@@ -39,8 +39,8 @@ project.innerHTML = `
     <p>${selected.desc}</p>
     ${tech()}
     <br><br><br><br><br>
-    <a href=${selected.source} class="info-a">View Source</a>
-    <a href=${selected.demo} class="info-a">Live Demo</a>
+    <a href=${selected.source} class="info-a" target="_blank">View Source</a>
+    <a href=${selected.demo} class="info-a" target="_blank">Live Demo</a>
   </div>
 `;
 

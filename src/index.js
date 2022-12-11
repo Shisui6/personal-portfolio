@@ -138,8 +138,8 @@ const projects = [
     tech: ['HTML', 'CSS', 'JS'],
     img: todoImg,
     imgDemo: todoDemo,
-    source: 'https://github.com/Shisui6/to-do-list',
-    demo: 'https://shisui6.github.io/to-do-list/dist/',
+    source: 'https://github.com/Shisui6/my-day',
+    demo: 'https://shisui6.github.io/my-day/',
     delay: '4.0s',
   },
 ];
