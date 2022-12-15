@@ -944,7 +944,7 @@ footer {
   padding: 20px 10px;
 }
 
-.project-details img {
+.pro-img {
   height: 350px;
   width: 95%;
   display: block;
@@ -952,6 +952,14 @@ footer {
   margin-right: auto;
   border-radius: 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#redux-icon {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  top: 2px;
+  left: 12px;
 }
 
 .info {

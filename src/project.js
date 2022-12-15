@@ -1,5 +1,6 @@
 // Imports
 import './style.css';
+import reduxIcon from './images/redux-icon.png';
 import { scrollFunction } from './modules/header.js';
 
 // When the user scrolls, call scrollFunction
@@ -20,6 +21,13 @@ const tech = () => {
     `;
   }
 
+  if (selected.tech.length === 2) {
+    return `
+      <i class="fa-brands fa-react per"></i>
+      <img src=${reduxIcon} alt="redux" id="redux-icon"/>
+    `;
+  }
+
   return '<i class="fa-brands fa-react per"></i>';
 };
 
@@ -32,7 +40,7 @@ project.className = 'project-details';
 project.id = 'project-section';
 project.innerHTML = `
   <div>
-    <img alt="card" src=${selected.imgDemo} id="project-img">
+    <img alt="card" src=${selected.imgDemo} id="project-img" class="pro-img">
   </div>
   <div class="info">
     <h2>${selected.title}</h2>

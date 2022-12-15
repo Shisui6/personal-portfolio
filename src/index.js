@@ -9,7 +9,7 @@ import rubyImg from './images/ruby.png';
 import railsImg from './images/rails.png';
 import redditImg from './images/reddit.jpg';
 import todoImg from './images/todo.jpg';
-import jamImg from './images/spotify.jpg';
+import bookImg from './images/books.jpg';
 import calcImg from './images/calc.jpg';
 import mealImg from './images/meal.jpg';
 import leaderImg from './images/leader.jpg';
@@ -17,7 +17,7 @@ import mealDemo from './images/meal-demo.png';
 import todoDemo from './images/todo-demo.png';
 import leaderboardDemo from './images/leaderboard-demo.png';
 import redditDemo from './images/reddit-demo.png';
-import jammingDemo from './images/jamming-demo.png';
+import bookDemo from './images/bookstore-demo.png';
 import calcDemo from './images/calc-demo.png';
 
 // Set src for images
@@ -100,13 +100,13 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Jamming',
-    desc: 'A react application for creating and saving playlists to spotify',
-    tech: ['React'],
-    img: jamImg,
-    imgDemo: jammingDemo,
-    source: 'https://github.com/Shisui6/jammming',
-    demo: 'https://spotify1-playlist-creator.netlify.app/',
+    title: 'Bookstore',
+    desc: 'Bookstore is a react and redux application that helps you stick to your daily reading goals. Add all the books you are reading and keep track of your progress to completion. You can also filter your books by different categories',
+    tech: ['React', 'Redux'],
+    img: bookImg,
+    imgDemo: bookDemo,
+    source: 'https://github.com/Shisui6/bookstore',
+    demo: 'https://shisui-bookstore.netlify.app/',
     delay: '2.2s',
   },
   {
