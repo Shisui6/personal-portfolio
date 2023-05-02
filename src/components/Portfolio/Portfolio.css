@@ -1,0 +1,113 @@
+.portfolio-section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.portfolio-section h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 1.5em;
+}
+
+.portfolio-section ul {
+  text-align: center;
+  margin-bottom: 4em;
+  padding: 0;
+}
+
+.portfolio-section li {
+  display: inline-block;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+#fil button {
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#fil button:hover {
+  color: #008cba;
+}
+
+.gallery {
+  display: grid;
+  margin: 0 auto 80px;
+  grid-gap: 30px;
+  border-radius: 25px;
+  width: 85%;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(6, 300px);
+}
+
+.project {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 25px;
+  cursor: pointer;
+  position: relative;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  border-radius: 25px;
+  transition: 0.5s ease;
+  background-color: rgba(0, 140, 186, 0);
+}
+
+.text {
+  color: white;
+  padding-top: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  opacity: 0;
+}
+
+.project:hover .overlay {
+  background-color: rgba(0, 140, 186, 0.7);
+}
+
+.project:hover .text {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.text h3 {
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.text p {
+  margin-bottom: 15px;
+  font-weight: 300;
+}
+
+.pro-a {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #8f8f8e;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+
+.pro-a:hover {
+  background-color: #fff;
+}
+
+.text h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
