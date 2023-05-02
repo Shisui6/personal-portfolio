@@ -35,10 +35,9 @@ A personal portfolio website to showcase the different projects I build
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="#">HTML</a></li>
-    <li><a href="#">CSS</a></li>
-    <li><a href="#">JavaScript</a></li>
-    <li><a href="https://webpack.js.org/">Webpack</a></li>
+    <li><a href="https://react.dev/">React</a></li>
+    <li><a href="https://redux.js.org/">Redux</a></li>
+    <li><a href="https://tailwindcss.com/">Tailwind</a></li>
   </ul>
 </details>
 
@@ -48,7 +47,7 @@ A personal portfolio website to showcase the different projects I build
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://okemdi-portfolio.netlify.app)
+- [Live Demo Link](https://okemdi-portfolio.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -91,8 +90,7 @@ Install this project with:
 To run the project, execute the following command:
 
 ```sh
-  npm run build - Builds development files into production code
-  npm start - Starts the development server
+  npm run dev - Starts the development server
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
