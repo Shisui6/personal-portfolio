@@ -1,5 +1,17 @@
+import About from "../About/About";
+import Contact from "../Contact/Contact";
+import Headline from "../Headline/Headline";
+import Portfolio from "../Portfolio/Portfolio";
+
 const Home = () => {
-  return ( <h1>Hello</h1> );
+  return ( 
+    <>
+      <Headline />
+      <About />
+      <Portfolio />
+      <Contact />
+    </>
+   );
 }
  
 export default Home;

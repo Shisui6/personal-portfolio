@@ -1,0 +1,29 @@
+footer {
+  margin-top: 80px;
+  text-align: center;
+  background-color: #008cba;
+  color: #fff;
+  padding: 35px;
+}
+
+.footer ul {
+  margin-top: 40px;
+}
+
+.footer li {
+  display: inline-block;
+  padding: 20px 20px;
+  background-color: #2692b6;
+  border-radius: 50px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.foot-link {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.foot-link:hover {
+  color: #e3e3e3;
+}

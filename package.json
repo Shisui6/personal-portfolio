@@ -10,9 +10,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.8",
+    "@formkit/auto-animate": "^1.0.0-beta.6",
+    "@mantine/core": "^6.0.10",
+    "@mantine/hooks": "^6.0.10",
+    "@reduxjs/toolkit": "^1.9.5",
     "react": "^18.2.0",
+    "react-awesome-reveal": "^4.2.3",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.10.0"
+    "react-icons": "^4.8.0",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.10.0",
+    "redux": "^4.2.1",
+    "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
     "@babel/core": "^7.21.4",

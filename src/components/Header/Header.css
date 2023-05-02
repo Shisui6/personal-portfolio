@@ -1,0 +1,50 @@
+header {
+  height: 80px;
+  transition: 0.4s;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+nav {
+  margin-top: 35px;
+  text-align: center;
+  transition: 0.4s;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  padding: 5px 15px;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #008cba;
+}
+
+.nav-link:active {
+  color: #008cba;
+}
+
+.active {
+  color: #008cba !important;
+  font-weight: bold !important;
+}
