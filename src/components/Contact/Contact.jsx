@@ -89,11 +89,11 @@ const Contact = () => {
               </div>
               <div id="det2" className="detail">
                 <h4 className="font-bold"><i><BsPhoneFill className="inline mr-1 text-sm" /></i>Phone</h4>
-                <p>+234 902 911 9162</p>
+                <p>+49 155 10521701</p>
               </div>
               <div id="det3" className="detail">
                 <h4 className="font-bold"><i><BiCurrentLocation className="inline mr-1 text-sm" /></i>Location</h4>
-                <p>Lagos, Nigeria</p>
+                <p>Munich, Germany</p>
               </div>
             </Reveal>
           </div>
